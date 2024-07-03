@@ -1,0 +1,30 @@
+{% extends 'tienda/base.html' %}
+
+
+{% block contenido %} 
+    <center>
+        {% if searched %}
+            <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #777777;">Las coincidencias de tu busqueda...</h1>
+            <br>
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="casilla">
+                {% for p in prod %}
+                    <div class="col">
+                        <div class="card h-100">
+                        {% if p.portada %}
+                            <a href="carrito.html"><img src="{{ p.portada.url }}" class="card-img-top" alt="..." height="370px"></a>
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ p.producto}}</h5>
+                            <p class="card-text">{{ p.precio }}</p>
+                        </div>
+                        </div>
+                    </div> 
+                {% endfor %}
+            </div>
+        {% else %}
+            <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #777777; margin-top: 24px;"
+            >Olvidaste buscar algo...</h1>
+        {% endif %}
+    </center>
+    
+{% endblock %}

@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Varela+Round&display=swap');
+
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/*barra menu*/
+.navbar-brand{
+    margin-right: 40px;
+    margin-left: 24px;
+}
+
+.nav-item a:hover{
+    color: #db6ca0;
+    background-color: #ffecf6;
+    border-radius: 10px;
+}
+
+.d-flex{
+    margin-left: 19px;
+}
+
+.d-flex button{
+    color:#db6ca0;
+    border-color:#db6ca0;
+    --bs-btn-active-bg: none;
+}
+
+.d-flex button:hover{
+    color:#db6ca0;
+    border-color:#db6ca0;
+    background: #ffecf6;
+}
+
+.buttons{
+    float: right;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+}
+
+.buttons a{
+    color: rgb(122, 122, 122);
+}
+
+.buttons a:hover{
+    color:  rgb(66, 66, 66);
+}
+
+.login-button{
+    margin-right: 17px;
+}
+
+.shopping-cart-button{
+    margin-right: 27px;
+}
+
+/*Inicio*/
+.acc-catal{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    padding: 50px;
+    margin-top: 19px;
+    margin-bottom: 80px;
+    align-items: center;
+    background-image: url('../img/fondo-in.jpg');
+}
+
+.title h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 90px;
+    font-style: normal;
+    color:#777777;
+    left: 140px;
+    position: relative;
+}
+
+.title{
+    width: 50%;
+}
+
+.desc{
+    width: auto;
+}
+
+.desc p{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    text-align: right;
+    color:#777777;
+    margin-left: 50px;
+    left: 200px;
+    position: relative;
+}
+
+.desc a{
+    color:#db6ca0;
+    text-decoration: none;
+}
+
+.desc button{
+    color:#db6ca0;
+    border-color:#db6ca0;
+    padding: 10px 35px 10px 35px;
+    border-radius: 12px;
+    float: right;
+    left: 250px;
+    position: relative;
+}
+
+
+.desc button:hover{
+    color:#db6ca0;
+    border-color:#db6ca0;
+    background: #ffecf6;
+    
+}
+
+/*productos destacados*/
+.title-products{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 37px;
+}
+
+.products-items{
+    display: flex;
+    min-width: 100%;
+    padding: 75px 14px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.items{
+    position: relative;
+}
+
+#button{
+    --bs-btn-active-bg: none;
+    color:#db6ca0;
+    border-color:#db6ca0;
+    background-color: #fff;
+}
+
+#button:hover{
+background-color: #ffecf6;
+}
+
+/*seccion sobre mi*/
+#sobre-mi{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/fondo-in.jpg');
+}
+
+.photo-aboutme{
+    margin-left: 130px;
+    display: inline-block;
+}
+
+.descr{
+    padding-left: 55px;
+    padding-right: 55px;
+    font-family: "Dancing Script", cursive;
+    font-size: 32px;
+    text-align: justify;
+    color:#777777;
+}
+
+.descr h3{
+    font-size: 53px;
+    display: inline-block;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(70, 70, 70);
+}
+
+/*Carrusel*/
+#carouselExample{
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+
+/*pie de pagina*/
+.pie-pagina{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+    text-align: center;
+    background-image: url('../img/fondo-footer.webp');
+}
+
+.social-icons-container a{
+    color: rgb(122, 122, 122);
+}
+
+.social-icons-container a:hover{
+    color:  rgb(66, 66, 66);
+}
+
+.logo{
+    margin-right: 5px;
+}
+
+.contenido{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.copyright{
+    margin-left: 50px;
+}
+
+
+/*pagina productos*/
+.col{
+    width: 26rem;
+    height: auto;
+}
+
+#casilla{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.titulo-productos h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#777777;
+    font-size: 60px;
+    margin-top: 28px;
+}
+
+
+/*carro de compras*/
+.product-container {
+    margin-bottom: 20px;/*ESTO ES EL TAMAÑO DEL BORDE DEL PRODUCTO*/
+}
+
+#cart-count {
+    margin-left: 5px;/*ESTO APLICA LA DISTANCIA ENTRE LAS IMAJENES*/
+}
+
+#carrito-section {
+    margin-top: 5cm;/*ESTO ES LA SEPARACION DEL ITULO CARRITO DE COMPRAS DE LAS IMAJENES DE LOS PRODUCTOS*/
+}
+
+#carrito-section h3,
+#carrito-section h4,
+#carrito-section button {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* COLORES PARA LOS BOTONES DE COMPRAR, ELIMINAR Y AÑADIR AL CARRITO*/
+
+/*BOTON DE COMPRAR*/
+
+.btn-success.btn-success {
+    color:#db6ca0;
+    background-color: #fff;
+    border-color:#db6ca0;
+
+}
+
+/*BOTON DE ELIMINAR*/
+
+.btn-danger {
+    color:#db6ca0;
+    background-color: #fff;
+    border-color:#db6ca0;
+}
+
+
+/*BOTON DE AÑADIR AL CARRITO*/
+
+.add-to-cart {
+    color:#db6ca0;
+    background-color: #fff;
+    border-color:#db6ca0;
+}

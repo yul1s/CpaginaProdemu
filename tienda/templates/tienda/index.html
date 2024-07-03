@@ -1,0 +1,98 @@
+{% extends 'tienda/base.html' %}
+{% load static %}
+
+{% block contenido %}    
+    <!--Seccion insentivar catalogo-->
+    <div class="acc-catal">
+        <div class="title">
+            <h1>Tu destino creativo <br> en un solo catálogo</h1>
+        </div>
+        <div class="desc">
+            <p>Ve muchas posibilidades de productos <br> disponibles en nuestro catálogo</p>
+            <button><a href="productos">Productos</a></button>
+        </div>
+    </div>
+
+    <!--Productos destacados-->
+    <h2 class="title-products">Productos Destacados</h2>
+    <div class="products-items">
+        <div class="items">
+            <div class="card" style="width: 18.3rem;">
+                <img src="{% static 'img/cinta-naranja.jpg' %}" class="card-img-top" alt="cinta-naranja">
+                <div class="card-body">
+                <h5 class="card-title">Cinta Lana Naranja</h5>
+                <a href="productos" id ="button" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+        </div>
+            
+        <div class="items" style="padding-left: 45px;">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'img/monedero-cierre-negro-cafe.jpg' %}" class="card-img-top" alt="monedero-cierre">
+                <div class="card-body">
+                    <h5 class="card-title">Monedero con Cierre</h5>
+                    <a href="productos" id ="button" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="items" style="padding-left: 45px; padding-right: 45px;">
+            <div class="card" style="width: 18.5rem;">
+                <img src="{% static 'img/monio-morado.jpg' %}" class="card-img-top" alt="moño-morado">
+                <div class="card-body">
+                    <h5 class="card-title">Moño Morado</h5>
+                    <a href="productos" id ="button" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="card" style="width: 19.7rem;">
+                <img src="{% static 'img/recipiente-rojo.jpg' %}" class="card-img-top" alt="recipiente-rojo">
+                <div class="card-body">
+                    <h5 class="card-title">Bol Lana Rojo</h5>
+                    <a href="#" id ="button" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Sobre mi-->
+    <div id="sobre-mi">
+        <div class="photo-aboutme">
+            <img src="{% static 'img/foto-sobre-mi.jpg' %}" width="450px"/>
+        </div>
+        <div class="descr">
+            <h3>Sobre mi</h3>
+            <p>Soy Janny, una emprendedora apasionada por las artesanías y el tejido. Soy madre soltera de 
+                dos hijos maravillosos que están en plena etapa de estudios. Mi viaje como emprendedora 
+                comenzó de una manera muy especial: creando moños, gorros y pinches para mi hija. Esta experiencia
+                no solo me inspiró a empezar mi propio negocio, sino que también honrar la tradición y el legado
+                de mis abuelas, quienes también realizaban artesanías cuando yo era más joven.<br>
+                Gracias por visitar mi página web y por apoyar el arte hecho a mano.</p>
+        </div>
+    </div>
+
+    <!--Carrusel-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/Banner-registro.png' %}" class="d-block w-100" alt="banner1">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/Banner hand made.png' %}" class="d-block w-100" alt="banner2">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/Banner envios.png' %}" class="d-block w-100" alt="banner3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+{% endblock %}

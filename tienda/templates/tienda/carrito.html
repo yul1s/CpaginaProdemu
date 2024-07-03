@@ -1,0 +1,49 @@
+{% extends 'tienda/base.html' %}
+{% load static %}
+
+{% block contenido %}
+    <!--PRODUCTOS -->
+    <div class="container mt-5 pt-5">
+        <div id="product-list" class="row">
+            <div class="col-md-3 product-container">
+                <div class="card product-card">
+                    <img src="{% static 'img/cinta-lana-esponjosa.jpg' %}" class="card-img-top product-image" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cinta Esponjosa</h5>
+                        <p class="card-text">$2.500</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Producto 1" data-price="10.00">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+             <!--SEPARACION DE PRODUCTO-->
+
+            <div class="col-md-3 product-container">
+                <div class="card product-card">
+                    <img src="{% static 'img/cinta-naranja.jpg' %}" class="card-img-top product-image" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cinta Naranja</h5>
+                        <p class="card-text">$1.500</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Producto 2" data-price="15.00">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+             <!--SEPARACION DE PRODUCTO-->
+             
+
+        </div>
+    </div>
+
+    <!-- CARRITO-->
+    <div class="container mt-5" id="carrito-section">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h3>Carrito de Compras</h3>
+                <ul id="cart-list" class="list-group mb-3">
+                
+                </ul>
+                <h4>Total: $<span id="total-price">0.00</span></h4>
+                <button class="btn btn-success buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

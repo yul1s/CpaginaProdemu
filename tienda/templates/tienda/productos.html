@@ -1,0 +1,27 @@
+{% extends 'tienda/base.html' %}
+{% load static %}
+
+{% block contenido %} 
+
+    <!--mostrar productos-->
+    <div class="titulo-productos">
+        <h1>Productos</h1>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="casilla">
+      {% for i in productos %}
+        <div class="col">
+          <div class="card h-100">
+            {% if i.portada %}
+              <a href="carrito.html"><img src="{{ i.portada.url }}" class="card-img-top" alt="..." height="370px"></a>
+            {% endif %}
+            <div class="card-body">
+              <h5 class="card-title">{{ i.producto}}</h5>
+              <p class="card-text">{{ i.precio }}</p>
+            </div>
+          </div>
+        </div> 
+      {% endfor %}
+    </div>
+      
+{% endblock %}
