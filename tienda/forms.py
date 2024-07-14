@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from .models import Contacto
+from django.contrib.auth.models import User
 
 class ContactoForm(forms.ModelForm):
     class Meta:
@@ -9,4 +10,6 @@ class ContactoForm(forms.ModelForm):
 
 
 class CustomUserCreationForm(UserCreationForm):
-    pass
+    class Meta:
+        model = User
+        fields = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']

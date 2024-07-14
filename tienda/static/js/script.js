@@ -10,24 +10,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // PRODUCTOS
   const products = [
-      { name: "Cinta Negra", price: 10.00, img: "static/img/cinta-negra.jpg" },
-      { name: "Cinta Rosa", price: 15.00, img: "img/cinta-rosa-pequeña.jpg" },
-      { name: "Cinta Rosa Pequeñita", price: 20.00, img: "img/cinta-rosa-pequeñita.jpg"},
-      { name: "Cinta Rosa", price: 25.00, img: "img/cinta-rosa.jpg" },
-      { name: "Llavero de Corazón Rosa", price: 30.00, img: "img/llavero-rosa.jpg" },
-      { name: "Monedero Café con Leche", price: 35.00, img: "img/monedero-cierre-cafe.jpg" },
-      { name: "Llavero Pompom", price: 35.00, img: "img/llavero-pompom.jpg" },
-      { name: "Llavero de Corazón", price: 35.00, img: "img/llavero-colores.jpg" },
-      { name: "Monedero Negro con Café", price: 35.00, img: "img/monedero-cierre-negro-cafe.jpg" },
-      { name: "Monedero Negro", price: 35.00, img: "img/monedero-cierre-negro.jpg" },
-      { name: "Monedero Palo Rosa", price: 35.00, img: "img/monedero-rosa-rojo.jpg" },
-      { name: "Moño Girasol", price: 35.00, img: "img/monio-amarillo-cafe.jpg" },
-      { name: "Moño Sunshine", price: 35.00, img: "img/monio-amarillo.jpg" },
-      { name: "Moño café", price: 35.00, img: "img/monio-cafe.jpg" },
-      { name: "Moño Morado", price: 35.00, img: "img/monio-morado.jpg" },
-      { name: "Moño Rosaseo", price: 35.00, img: "img/monio-lana-esponjosa.jpg" },
-      { name: "Moño Negro", price: 35.00, img: "img/monno-negro.jpg" },
-      { name: "Recipiente", price: 35.00, img: "img/recipiente-rojo2.jpg" }
+      { name: "Cinta Negra", price: 2.700, img: "static/img/cinta-negra.jpg" },
+      { name: "Cinta Rosa", price: 2.000, img: "static/img/cinta-rosa-pequeña.jpg" },
+      { name: "Cinta Rosa Pequeñita", price: 700, img: "static/img/cinta-rosa-pequeñita.jpg"},
+      { name: "Cinta Rosa", price: 2.200, img: "static/img/cinta-rosa.jpg" },
+      { name: "Llavero de Corazón Rosa", price: 1.000, img: "static/img/llavero-rosa.jpg" },
+      { name: "Monedero Café con Leche", price: 3.650, img: "static/img/monedero-cierre-cafe.jpg" },
+      { name: "Llavero Pompom", price: 1.250, img: "static/img/llavero-pompom.jpg" },
+      { name: "Llavero de Corazón", price: 1.250, img: "static/img/llavero-colores.jpg" },
+      { name: "Monedero Negro con Café", price: 3.650, img: "static/img/monedero-cierre-negro-cafe.jpg" },
+      { name: "Monedero Negro", price: 3.650, img: "static/img/monedero-cierre-negro.jpg" },
+      { name: "Monedero Palo Rosa", price: 3.650, img: "static/img/monedero-rosa-rojo.jpg" },
+      { name: "Moño Girasol", price: 3.000, img: "static/img/monio-amarillo-cafe.jpg" },
+      { name: "Moño Sunshine", price: 3.000, img: "static/img/monio-amarillo.jpg" },
+      { name: "Moño café", price: 3.000, img: "static/img/monio-cafe.jpg" },
+      { name: "Moño Morado", price: 3.000, img: "static/img/monio-morado.jpg" },
+      { name: "Moño Rosaseo", price: 3.500, img: "static/img/monio-lana-esponjosa.jpg" },
+      { name: "Moño Negro", price: 3.200, img: "static/img/monno-negro.jpg" },
+      { name: "Recipiente", price: 4.500, img: "static/img/recipiente-rojo2.jpg" }
   ];
 
   // RENDERIZAR PRODUCTOS

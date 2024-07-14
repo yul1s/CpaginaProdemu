@@ -34,10 +34,10 @@ def signup(request):
             login(request, user)
 
             return redirect('/')
-    return render(request, 'tienda/signup.html', data)
+    return render(request, 'registration/signup.html', data)
 
 def login(request):
-    return render(request, 'tienda/login.html')
+    return render(request, 'registration/login.html')
 
 def exit(request):
     logout(request)
